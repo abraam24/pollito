@@ -1,0 +1,170 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #bd71db, #b566d7);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Encabezado decorativo flotante */
+.header-box {
+    background: rgba(179, 102, 212, 0.9);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    position: absolute;
+    top: 20px;
+}
+
+/* Cuadro blanco central */
+.content-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mejoras al título */
+.title {
+    font-family: 'Anton', sans-serif;
+    color: #b273cc;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* GIF */
+.gif {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Espacio para mensajes dinámicos */
+.dynamic-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff3838;
+    height: 50px;
+    margin-bottom: 15px;
+    transition: opacity 0.3s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones flotantes */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Botón base */
+.btn {
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 130px;
+}
+
+/* Botón SÍ */
+.btn-si {
+    background-color: #b471d0;
+    color: white;
+    box-shadow: 0 5px 15px rgba(181, 124, 205, 0.5);
+}
+
+.btn-si:hover {
+    background-color: #bf8cd5;
+    transform: scale(1.1);
+}
+
+/* Botón NO */
+.btn-no {
+    background-color: #576574;
+    color: white;
+    box-shadow: 0 5px 15px rgba(87, 101, 115, 0.5);
+}
+
+.btn-no:hover {
+    background-color: #3c4a57;
+    transform: scale(1.1);
+}
+
+/* Mensaje de advertencia flotante */
+.warning {
+    color: #ff3838;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes de Lotso */
+.lotso-image {
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.5);
+    opacity: 0;
+    transition: transform 0.1s ease-in-out, opacity 0.1s ease-in-out;
+}
+
+/* Primera aparición (izquierda) */
+.lotso-left {
+    left: +120px;
+}
+
+/* Segunda aparición (derecha) */
+.lotso-right {
+    right: +120px;
+}
+
+/* Tercera aparición (abajo del cuadro, más pequeña) */
+.lotso-bottom {
+    width: 130px; /* Tamaño ajustado */
+    left: 50%;
+    bottom: 200px; /* Ajustado para que suba más */
+    transform: translateX(-50%) scale(0.45); /* Ligeramente más pequeño */
+}
+
+
+
+/* Efecto de susto */
+.lotso-show {
+    opacity: 1 !important;
+    transform: translateY(-50%) scale(1.3) rotate(5deg);
+}
+
+/* Efecto de susto para la imagen de abajo */
+.lotso-show-bottom {
+    opacity: 1 !important;
+    transform: translateX(-50%) scale(1) rotate(5deg);
+}
+
+
+
+
